@@ -103,10 +103,15 @@ IAM Role → EC2
 
 ⚙️ How It Works
 🔹 Phase 1 – Serverless Workflow
+
 1.User uploads image to Amazon S3
+
 2.AWS Rekognition indexes the face
+
 3.Face collection stores embeddings
+
 4.Rekognition searches for matches
+
 5.Confidence score returned
 
 🔹 Phase 2 – Web Application Workflow
