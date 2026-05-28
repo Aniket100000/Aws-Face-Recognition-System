@@ -102,6 +102,7 @@ IAM Role → EC2
 
 
 ⚙️ How It Works
+
 🔹 Phase 1 – Serverless Workflow
 
 1.User uploads image to Amazon S3
@@ -115,17 +116,27 @@ IAM Role → EC2
 5.Confidence score returned
 
 🔹 Phase 2 – Web Application Workflow
+
 1.User uploads image from browser
+
 2.Flask backend receives image
+
 3.Image sent to AWS Rekognition
+
 4.Rekognition compares face with collection
+
 5.Result displayed with confidence score
 
 🔹 AWS Services Used
+
 1.Amazon Rekognition → Face Detection & Matching
+
 2.Amazon S3 → Image Storage
+
 3.AWS EC2 → Hosting Flask Application
+
 4.AWS IAM → Security & Permissions
+
 5.AWS CloudShell → CLI Workflow
 
 
