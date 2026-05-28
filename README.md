@@ -137,35 +137,19 @@ IAM Role → EC2
 
 
 
-📸 Screenshots
+## 📸 Screenshots
 
-🔹  AWS EC2 Terminal
+*  AWS EC2 Terminal
 
+*  Face - Indexed
 
+*  Face Recognition Result
 
+*  Face Recognition Terminal
 
-🔹 Face - Indexed
+*  Homepage UI
 
-
-
-
-🔹Face Recognition Result
-
-
-
-
-🔹 Face Recognition Terminal
-
-
-
-
-🔹 Homepage UI
-
-
-
-
-🔹 AWS S3 Storage
-
+*  AWS S3 Storage
 
 
 
