@@ -78,11 +78,15 @@ AWS CloudShell (CLI Execution)
 
 User Browser
       ↓
+      
 Flask App (AWS EC2)
       ↓
+      
 AWS Rekognition
       ↓
+      
 AWS S3 Storage
+
 
 IAM Role → EC2
 
