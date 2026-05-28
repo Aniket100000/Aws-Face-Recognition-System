@@ -6,84 +6,104 @@
 ![Status](https://img.shields.io/badge/Status-Active-success)
 
 
-🚀 FaceID Cloud – Intelligent Face Recognition System 
+# 🚀 FaceID Cloud – Intelligent Face Recognition System
 
 A complete cloud-based face recognition system built using AWS Rekognition, supporting both:
 
-🧪 Serverless CLI-based workflow (S3 + CloudShell)
-🌐 Full-stack Web App (Flask + EC2 + Modern UI)
+* 🧪 Serverless CLI-based workflow (S3 + CloudShell)
 
-🌐 Live Demo (Web App)
+* 🌐 Full-stack Web App (Flask + EC2 + Modern UI)
+
+---
+
+## 🌐 Live Demo (Web App)
 
 👉 http://13.233.45.217:5000
 
 ⚠️ Demo server may be temporarily offline when EC2 instance is stopped to optimize AWS Free Tier usage.
 
+---
 
-📌 Project Overview
+## 📌 Project Overview
 
 This project demonstrates how to build a real-world AI-powered face recognition system using AWS services.
 
 It was developed in two phases:
 
-🔹 Phase 1: Serverless (AWS CLI + S3)
+### 🔹 Phase 1: Serverless (AWS CLI + S3)
 
-Face recognition using AWS Rekognition + S3
-No backend server required
-Executed via AWS CloudShell
+* Face recognition using AWS Rekognition + S3
 
-🔹 Phase 2: Full Stack Web App
+* No backend server required
 
-Interactive UI built with modern frontend
-Backend using Flask (Python)
-Deployed on AWS EC2
-Real-time face upload and matching
+* Executed via AWS CloudShell
 
+### 🔹 Phase 2: Full Stack Web App
 
-✨ Features
+* Interactive UI built with modern frontend
 
-🔍 Real-time face detection and recognition
+* Backend using Flask (Python)
 
-🤖 AWS Rekognition powered AI matching
+* Deployed on AWS EC2
 
-⚡ Fast response time (<2 seconds)
+* Real-time face upload and matching
 
-🎯 High accuracy face comparison
+---
 
-☁️ Cloud deployment on AWS EC2
+## ✨ Features
 
-🗂️ Image storage using Amazon S3
+* 🔍 Real-time face detection and recognition
 
-🔐 IAM Role-based secure authentication
+* 🤖 AWS Rekognition powered AI matching
 
-🌐 Modern Flask web application
+* ⚡ Fast response time (<2 seconds)
 
-📸 Drag-and-drop image upload UI
+* 🎯 High accuracy face comparison
 
-🧠 Face collection-based recognition system
+* ☁️ Cloud deployment on AWS EC2
 
+* 🗂️ Image storage using Amazon S3
 
-💻 Supports both CLI and Web workflows
+* 🔐 IAM Role-based secure authentication
 
+* 🌐 Modern Flask web application
 
-🔹 Frontend
+* 📸 Drag-and-drop image upload UI
 
-HTML5
-CSS3 (Modern UI Design)
-JavaScript
+* 🧠 Face collection-based recognition system
 
-🔹 Backend (Phase 2)
+* 💻 Supports both CLI and Web workflows
 
-Flask (Python)
-Boto3 (AWS SDK)
+---
 
-🔹 Cloud Services
+## 🖥️ Tech Stack
 
-*AWS Rekognition (Face Detection & Matching)
-*Amazon S3 (Image Storage)
-*AWS EC2 (Hosting)
-*AWS IAM (Security & Access Control)
-*AWS CloudShell (CLI Execution)
+### 🔹 Frontend
+
+* HTML5
+
+* CSS3 (Modern UI Design)
+
+* JavaScript
+
+### 🔹 Backend (Phase 2)
+
+* Flask (Python)
+
+* Boto3 (AWS SDK)
+
+### 🔹 Cloud Services
+
+* AWS Rekognition (Face Detection & Matching)
+
+* Amazon S3 (Image Storage)
+
+* AWS EC2 (Hosting)
+
+* AWS IAM (Security & Access Control)
+
+* AWS CloudShell (CLI Execution)
+
 
 
 
