@@ -65,13 +65,18 @@ AWS CloudShell (CLI Execution)
 
 🏗️ Architecture
 
-🔹 Serverless Flow (Phase 1)
+## 🏗️ Architecture
 
-User → S3 Bucket → AWS Rekognition → Face Collection → Result
+User Browser
+      ↓
+Flask App (AWS EC2)
+      ↓
+AWS Rekognition
+      ↓
+AWS S3 Storage
 
-🔹 Web App Flow (Phase 2)
+IAM Role → EC2
 
-User → Web UI → Flask Backend → AWS Rekognition → Result UI
 
 
 
