@@ -212,10 +212,16 @@ python app.py
 🌐 How Web App Works (Phase 2)
 
 User uploads image from browser
+
 Flask backend receives file
+
 Image sent to AWS Rekognition
+
 Faces matched with collection
+
 Result shown with confidence score
+
+
 
 
 📊 Example Output
@@ -259,40 +265,63 @@ Run Flask app:
 python app.py
 
 
+
+
 🔐 Security
 
 IAM roles used (no hardcoded credentials)
+
 Secure API access to Rekognition
+
 Follows best practices
+
+
 
 
 💰 Cost Consideration
 
 Built using AWS Free Tier
+
 Minimal resource usage
+
 Optimized API calls
+
+
 
 
 🎯 Key Learnings
 
 AWS Rekognition hands-on implementation
+
 Serverless architecture (S3 + CLI)
+
 Full-stack deployment on EC2
+
 Integration of AI with web apps
+
 Real-world cloud project building
 
 
 🔮 Future Enhancements
 
 🔐 User authentication system
+
 📸 Real-time webcam face recognition
+
 📱 Fully responsive mobile UI
+
 🔒 HTTPS/SSL deployment
+
 🗄️ Store recognition results in DynamoDB
+
 ☁️ Deploy using Docker & Kubernetes
+
 🎥 Live video recognition using Rekognition Video API
+
 🌍 Custom domain integration
+
 📊 CloudWatch monitoring dashboard
+
 ⚡ Serverless migration using AWS Lambda
 
 👨‍💻 Author
