@@ -285,10 +285,15 @@ Real-world cloud project building
 🔮 Future Enhancements
 
 🔐 User authentication system
-📸 Live webcam face detection
-📱 Mobile responsiveness
-🔒 HTTPS (SSL) setup
-🗄️ Store results in DynamoDB
+📸 Real-time webcam face recognition
+📱 Fully responsive mobile UI
+🔒 HTTPS/SSL deployment
+🗄️ Store recognition results in DynamoDB
+☁️ Deploy using Docker & Kubernetes
+🎥 Live video recognition using Rekognition Video API
+🌍 Custom domain integration
+📊 CloudWatch monitoring dashboard
+⚡ Serverless migration using AWS Lambda
 
 👨‍💻 Author
 Aniket Kushwaha
