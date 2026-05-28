@@ -180,6 +180,27 @@ face-recognition-aws/
 └── README.md
 
 
+🖥️ Tech Stack
+
+⚙️ Installation & Setup
+
+Clone the repository:
+
+git clone https://github.com/Aniket100000/Aws-Face-Recognition-System.git
+
+Go to project folder:
+
+cd Aws-Face-Recognition-System
+
+Install dependencies:
+
+pip install -r requirements.txt
+
+Run Flask app:
+
+python app.py
+
+
 🔐 Security
 
 IAM roles used (no hardcoded credentials)
