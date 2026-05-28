@@ -76,9 +76,9 @@ It was developed in two phases:
 
 ---
 
-## 🖥️ Tech Stack
+# 🖥️ Tech Stack
 
-### 🔹 Frontend
+## 🔹 Frontend
 
 * HTML5
 
@@ -86,13 +86,17 @@ It was developed in two phases:
 
 * JavaScript
 
-### 🔹 Backend (Phase 2)
+---
+
+## 🔹 Backend (Phase 2)
 
 * Flask (Python)
 
 * Boto3 (AWS SDK)
 
-### 🔹 Cloud Services
+---
+
+## 🔹 Cloud Services
 
 * AWS Rekognition (Face Detection & Matching)
 
@@ -104,13 +108,11 @@ It was developed in two phases:
 
 * AWS CloudShell (CLI Execution)
 
+---
 
+# 🏗️ Architecture
 
-
-
-🏗️ Architecture
-
-
+```text
 User Browser
       ↓
 Flask App (AWS EC2)
@@ -120,110 +122,151 @@ AWS Rekognition
 AWS S3 Storage
 
 IAM Role → EC2
+```
 
+---
 
+# ⚙️ How It Works
 
-
-
-## ⚙️ How It Works
-
-### 🔹 Phase 1 – Serverless Workflow
+## 🔹 Phase 1 – Serverless Workflow
 
 1. User uploads image to Amazon S3
+
 2. AWS Rekognition indexes the face
+
 3. Face collection stores embeddings
+
 4. Rekognition searches for matches
+
 5. Confidence score returned
 
 ---
 
-### 🔹 Phase 2 – Web Application Workflow
+## 🔹 Phase 2 – Web Application Workflow
 
 1. User uploads image from browser
+
 2. Flask backend receives image
+
 3. Image sent to AWS Rekognition
+
 4. Rekognition compares face with collection
+
 5. Result displayed with confidence score
 
 ---
 
-### 🔹 AWS Services Used
+## 🔹 AWS Services Used
 
 * Amazon Rekognition → Face Detection & Matching
+
 * Amazon S3 → Image Storage
+
 * AWS EC2 → Hosting Flask Application
+
 * AWS IAM → Security & Permissions
-* AWS CloudShell → CLI Workflownext
 
+* AWS CloudShell → CLI Workflow
 
+---
 
+# 📸 Screenshots
 
-📸 Screenshots
+* 🔹 AWS EC2 Terminal
 
-*  AWS EC2 Terminal
+* 🔹 Face - Indexed
 
-*  Face - Indexed
+* 🔹 Face Recognition Result
 
-*  Face Recognition Result
+* 🔹 Face Recognition Terminal
 
-*  Face Recognition Terminal
+* 🔹 Homepage UI
 
-*  Homepage UI
+* 🔹 AWS S3 Storage
 
-*  AWS S3 Storage
+---
 
+# ⚙️ Steps Performed (Phase 1 – CLI)
 
+## 1️⃣ Configure AWS
 
-⚙️ Steps Performed (Phase 1 – CLI)
-
-1️⃣ Configure AWS
+```bash
 aws configure set region ap-south-1
+```
 
-2️⃣ Create Collection
+---
+
+## 2️⃣ Create Collection
+
+```bash
 aws rekognition create-collection \
-  --collection-id free-face-collection
+--collection-id free-face-collection
+```
 
-3️⃣ Upload Image to S3
-Bucket: face-recognition-free-test
-Path: test/person1.jpeg
+---
 
-4️⃣ Index Face
+## 3️⃣ Upload Image to S3 Bucket
+
+* Bucket: `face-recognition-free-test`
+
+* Path: `test/person1.jpeg`
+
+---
+
+## 4️⃣ Index Face
+
+```bash
 aws rekognition index-faces \
-  --collection-id free-face-collection \
-  --image "S3Object={Bucket=face-recognition-free-test,Name=test/person1.jpeg}" \
-  --external-image-id "person1"
+--collection-id free-face-collection \
+--image "S3Object={Bucket=face-recognition-free-test,Name=test/person1.jpeg}" \
+--external-image-id "person1"
+```
 
- ☁️ AWS EC2 Deployment
+---
 
+# ☁️ AWS EC2 Deployment
 
+```bash
 python app.py
-
+```
 
 * Hosted on AWS EC2
+
 * IAM Role attached for secure AWS access
+
 * AWS Rekognition used for face matching
+
 * AWS S3 used for image storage
 
-  🌐 How Web App Works (Phase 2)
+---
 
-*User uploads image from browser
-*Flask backend receives file
-*Image sent to AWS Rekognition
-*Faces matched with collection
-*Result shown with confidence score
+# 🌐 How Web App Works (Phase 2)
 
+1. User uploads image from browser
 
+2. Flask backend receives file
 
+3. Image sent to AWS Rekognition
 
-📊 Example Output
+4. Faces matched with collection
 
+5. Result shown with confidence score
+
+---
+
+# 📊 Example Output
+
+```text
 ✅ Match Found
 🎯 Confidence: 100%
 🧑 Person ID: person1
+```
 
+---
 
-📂 Project Structure
+# 📂 Project Structure
 
+```text
 face-recognition-aws/
 │
 ├── app.py
@@ -233,56 +276,76 @@ face-recognition-aws/
 ├── commands/
 │   └── rekognition-commands.txt
 └── README.md
+```
 
+---
 
-🖥️ Tech Stack
+# ⚙️ Installation & Setup
 
-⚙️ Installation & Setup
+## Clone the repository
 
-Clone the repository:
-
+```bash
 git clone https://github.com/Aniket100000/Aws-Face-Recognition-System.git
+```
 
-Go to project folder:
+---
 
+## Go to project folder
+
+```bash
 cd Aws-Face-Recognition-System
+```
 
-Install dependencies:
+---
 
+## Install dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
-Run Flask app:
+---
 
+## Run Flask app
+
+```bash
 python app.py
+```
 
+---
 
+# 🔐 Security
 
+* IAM roles used (no hardcoded credentials)
 
-🔐 Security
+* Secure API access to Rekognition
 
-*IAM roles used (no hardcoded credentials)
-*Secure API access to Rekognition
-*Follows best practices
+* Follows AWS security best practices
 
+---
 
+# 💰 Cost Consideration
 
+* Built using AWS Free Tier
 
-💰 Cost Consideration
+* Minimal resource usage
 
-*Built using AWS Free Tier
-*Minimal resource usage
-*Optimized API calls
+* Optimized API calls
 
+---
 
+# 🎯 Key Learnings
 
+* AWS Rekognition hands-on implementation
 
-🎯 Key Learnings
+* Serverless architecture (S3 + CLI)
 
-*AWS Rekognition hands-on implementation
-*Serverless architecture (S3 + CLI)
-*Full-stack deployment on EC2
-*Integration of AI with web apps
-*Real-world cloud project building
+* Full-stack deployment on EC2
+
+* Integration of AI with web apps
+
+* Real-world cloud project building
+
 
 
 ## 🔮 Future Enhancements
