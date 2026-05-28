@@ -41,15 +41,27 @@ Real-time face upload and matching
 
 ✨ Features
 
-🔍 Upload image and detect faces instantly
-🤖 AWS Rekognition powered matching
-⚡ Fast response (<2 seconds)
-🎯 High accuracy (~99%+)
-🧠 Face collection-based matching
-💻 Modern UI/UX dashboard
+🔍 Real-time face detection and recognition
+
+🤖 AWS Rekognition powered AI matching
+
+⚡ Fast response time (<2 seconds)
+
+🎯 High accuracy face comparison
+
 ☁️ Cloud deployment on AWS EC2
-🔄 Supports both CLI and Web workflows
-🖥️ Tech Stack
+
+🗂️ Image storage using Amazon S3
+
+🔐 IAM Role-based secure authentication
+
+🌐 Modern Flask web application
+
+📸 Drag-and-drop image upload UI
+
+🧠 Face collection-based recognition system
+
+💻 Supports both CLI and Web workflows
 
 
 🔹 Frontend
