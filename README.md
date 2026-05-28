@@ -277,16 +277,26 @@ python app.py
 *Real-world cloud project building
 
 
-*🔮 Future Enhancements
-*🔐 User authentication system
-*📸 Real-time webcam face recognition
-*📱 Fully responsive mobile UI
-*🔒 HTTPS/SSL deployment
-*🗄️ Store recognition results in DynamoDB
-*☁️ Deploy using Docker & Kubernetes
-*🎥 Live video recognition using Rekognition Video API
-*🌍 Custom domain integration
-*📊 CloudWatch monitoring dashboard
+## 🔮 Future Enhancements
+
+* 🔐 User authentication system
+
+* 📸 Real-time webcam face recognition
+
+* 📱 Fully responsive mobile UI
+
+* 🔒 HTTPS/SSL deployment
+
+* 🗄️ Store recognition results in DynamoDB
+
+* ☁️ Deploy using Docker & Kubernetes
+
+* 🎥 Live video recognition using Rekognition Video API
+
+* 🌍 Custom domain integration
+
+* 📊 CloudWatch monitoring dashboard
+
 
 ⚡ Serverless migration using AWS Lambda
 
