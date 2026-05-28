@@ -67,7 +67,6 @@ AWS CloudShell (CLI Execution)
 
 🏗️ Architecture
 
-## 🏗️ Architecture
 
 User Browser
       ↓
