@@ -133,7 +133,7 @@ IAM Role → EC2
 * AWS EC2 → Hosting Flask Application
 * AWS IAM → Security & Permissions
 * AWS CloudShell → CLI Workflownext
-*
+
 
 
 
