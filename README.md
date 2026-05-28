@@ -78,11 +78,11 @@ Boto3 (AWS SDK)
 
 🔹 Cloud Services
 
-AWS Rekognition (Face Detection & Matching)
-Amazon S3 (Image Storage)
-AWS EC2 (Hosting)
-AWS IAM (Security & Access Control)
-AWS CloudShell (CLI Execution)
+*AWS Rekognition (Face Detection & Matching)
+*Amazon S3 (Image Storage)
+*AWS EC2 (Hosting)
+*AWS IAM (Security & Access Control)
+*AWS CloudShell (CLI Execution)
 
 
 
@@ -108,42 +108,29 @@ IAM Role → EC2
 
 🔹 Phase 1 – Serverless Workflow
 
-1.User uploads image to Amazon S3
-
-2.AWS Rekognition indexes the face
-
-3.Face collection stores embeddings
-
-4.Rekognition searches for matches
-
-5.Confidence score returned
+*User uploads image to Amazon S3
+*AWS Rekognition indexes the face
+*Face collection stores embeddings
+*Rekognition searches for matches
+*Confidence score returned
 
 
 🔹 Phase 2 – Web Application Workflow
 
-1.User uploads image from browser
-
-2.Flask backend receives image
-
-3.Image sent to AWS Rekognition
-
-4.Rekognition compares face with collection
-
-5.Result displayed with confidence score
+*User uploads image from browser
+*Flask backend receives image
+*Image sent to AWS Rekognition
+*Rekognition compares face with collection
+*Result displayed with confidence score
 
 
 🔹 AWS Services Used
 
-1.Amazon Rekognition → Face Detection & Matching
-
-2.Amazon S3 → Image Storage
-
-3.AWS EC2 → Hosting Flask Application
-
-4.AWS IAM → Security & Permissions
-
-5.AWS CloudShell → CLI Workflow
-
+*Amazon Rekognition → Face Detection & Matching
+*Amazon S3 → Image Storage
+*AWS EC2 → Hosting Flask Application
+*AWS IAM → Security & Permissions
+*AWS CloudShell → CLI Workflow
 
 
 📸 Screenshots
@@ -211,15 +198,11 @@ python app.py
   
 🌐 How Web App Works (Phase 2)
 
-User uploads image from browser
-
-Flask backend receives file
-
-Image sent to AWS Rekognition
-
-Faces matched with collection
-
-Result shown with confidence score
+*User uploads image from browser
+*Flask backend receives file
+*Image sent to AWS Rekognition
+*Faces matched with collection
+*Result shown with confidence score
 
 
 
@@ -269,58 +252,41 @@ python app.py
 
 🔐 Security
 
-IAM roles used (no hardcoded credentials)
-
-Secure API access to Rekognition
-
-Follows best practices
+*IAM roles used (no hardcoded credentials)
+*Secure API access to Rekognition
+*Follows best practices
 
 
 
 
 💰 Cost Consideration
 
-Built using AWS Free Tier
-
-Minimal resource usage
-
-Optimized API calls
+*Built using AWS Free Tier
+*Minimal resource usage
+*Optimized API calls
 
 
 
 
 🎯 Key Learnings
 
-AWS Rekognition hands-on implementation
-
-Serverless architecture (S3 + CLI)
-
-Full-stack deployment on EC2
-
-Integration of AI with web apps
-
-Real-world cloud project building
+*AWS Rekognition hands-on implementation
+*Serverless architecture (S3 + CLI)
+*Full-stack deployment on EC2
+*Integration of AI with web apps
+*Real-world cloud project building
 
 
-🔮 Future Enhancements
-
-🔐 User authentication system
-
-📸 Real-time webcam face recognition
-
-📱 Fully responsive mobile UI
-
-🔒 HTTPS/SSL deployment
-
-🗄️ Store recognition results in DynamoDB
-
-☁️ Deploy using Docker & Kubernetes
-
-🎥 Live video recognition using Rekognition Video API
-
-🌍 Custom domain integration
-
-📊 CloudWatch monitoring dashboard
+*🔮 Future Enhancements
+*🔐 User authentication system
+*📸 Real-time webcam face recognition
+*📱 Fully responsive mobile UI
+*🔒 HTTPS/SSL deployment
+*🗄️ Store recognition results in DynamoDB
+*☁️ Deploy using Docker & Kubernetes
+*🎥 Live video recognition using Rekognition Video API
+*🌍 Custom domain integration
+*📊 CloudWatch monitoring dashboard
 
 ⚡ Serverless migration using AWS Lambda
 
