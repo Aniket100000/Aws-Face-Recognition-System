@@ -6,21 +6,21 @@
 ![Status](https://img.shields.io/badge/Status-Active-success)
 
 
-🚀 FaceID Cloud – Intelligent Face Recognition System 
+##🚀 FaceID Cloud – Intelligent Face Recognition System 
 
 A complete cloud-based face recognition system built using AWS Rekognition, supporting both:
 
-🧪 Serverless CLI-based workflow (S3 + CloudShell)
-🌐 Full-stack Web App (Flask + EC2 + Modern UI)
+##🧪 Serverless CLI-based workflow (S3 + CloudShell)
+##🌐 Full-stack Web App (Flask + EC2 + Modern UI)
 
-🌐 Live Demo (Web App)
+##🌐 Live Demo (Web App)
 
 👉 http://13.233.45.217:5000
 
 ⚠️ Demo server may be temporarily offline when EC2 instance is stopped to optimize AWS Free Tier usage.
 
 
-📌 Project Overview
+##📌 Project Overview
 
 This project demonstrates how to build a real-world AI-powered face recognition system using AWS services.
 
@@ -40,7 +40,7 @@ Deployed on AWS EC2
 Real-time face upload and matching
 
 
-✨ Features
+##✨ Features
 
 🔍 Real-time face detection and recognition
 
@@ -62,7 +62,8 @@ Real-time face upload and matching
 
 🧠 Face collection-based recognition system
 
-💻 Supports both CLI and Web workflows
+
+##💻 Supports both CLI and Web workflows
 
 
 🔹 Frontend
@@ -87,7 +88,7 @@ Boto3 (AWS SDK)
 
 
 
-🏗️ Architecture
+##🏗️ Architecture
 
 
 User Browser
@@ -153,7 +154,7 @@ IAM Role → EC2
 
 
 
-⚙️ Steps Performed (Phase 1 – CLI)
+##⚙️ Steps Performed (Phase 1 – CLI)
 
 1️⃣ Configure AWS
 aws configure set region ap-south-1
@@ -172,7 +173,7 @@ aws rekognition index-faces \
   --image "S3Object={Bucket=face-recognition-free-test,Name=test/person1.jpeg}" \
   --external-image-id "person1"
 
- ☁️ AWS EC2 Deployment
+ ##☁️ AWS EC2 Deployment
 
 
 python app.py
@@ -183,8 +184,7 @@ python app.py
 * AWS Rekognition used for face matching
 * AWS S3 used for image storage
 
-  
-🌐 How Web App Works (Phase 2)
+  ##🌐 How Web App Works (Phase 2)
 
 *User uploads image from browser
 *Flask backend receives file
@@ -195,14 +195,14 @@ python app.py
 
 
 
-📊 Example Output
+##📊 Example Output
 
 ✅ Match Found
 🎯 Confidence: 100%
 🧑 Person ID: person1
 
 
-📂 Project Structure
+##📂 Project Structure
 
 face-recognition-aws/
 │
@@ -215,7 +215,7 @@ face-recognition-aws/
 └── README.md
 
 
-🖥️ Tech Stack
+##🖥️ Tech Stack
 
 ⚙️ Installation & Setup
 
@@ -238,7 +238,7 @@ python app.py
 
 
 
-🔐 Security
+##🔐 Security
 
 *IAM roles used (no hardcoded credentials)
 *Secure API access to Rekognition
@@ -247,7 +247,7 @@ python app.py
 
 
 
-💰 Cost Consideration
+##💰 Cost Consideration
 
 *Built using AWS Free Tier
 *Minimal resource usage
@@ -256,7 +256,7 @@ python app.py
 
 
 
-🎯 Key Learnings
+##🎯 Key Learnings
 
 *AWS Rekognition hands-on implementation
 *Serverless architecture (S3 + CLI)
