@@ -285,12 +285,14 @@ python app.py
 
 * 📊 CloudWatch monitoring dashboard
 
+* ⚡ Serverless migration using AWS Lambda
 
-⚡ Serverless migration using AWS Lambda
+---
 
+## 👨‍💻 Author
 
+**Aniket Kushwaha**
 
-👨‍💻 Author
-Aniket Kushwaha
-📧 Aniketkushwaha10064@gmail.com
-📱 9736550069
+📧 Email: [Aniketkushwaha10064@gmail.com](mailto:Aniketkushwaha10064@gmail.com)
+
+📱 Phone: 9736550069
