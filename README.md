@@ -9,6 +9,8 @@ A complete cloud-based face recognition system built using AWS Rekognition, supp
 
 👉 http://13.233.45.217:5000
 
+⚠️ Demo server may be temporarily offline when EC2 instance is stopped to optimize AWS Free Tier usage.
+
 📌 Project Overview
 
 This project demonstrates how to build a real-world AI-powered face recognition system using AWS services.
