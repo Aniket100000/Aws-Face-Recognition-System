@@ -19,6 +19,7 @@ A complete cloud-based face recognition system built using AWS Rekognition, supp
 
 ⚠️ Demo server may be temporarily offline when EC2 instance is stopped to optimize AWS Free Tier usage.
 
+
 📌 Project Overview
 
 This project demonstrates how to build a real-world AI-powered face recognition system using AWS services.
@@ -85,6 +86,7 @@ AWS CloudShell (CLI Execution)
 
 
 
+
 🏗️ Architecture
 
 
@@ -97,6 +99,7 @@ AWS Rekognition
 AWS S3 Storage
 
 IAM Role → EC2
+
 
 
 
@@ -115,6 +118,7 @@ IAM Role → EC2
 
 5.Confidence score returned
 
+
 🔹 Phase 2 – Web Application Workflow
 
 1.User uploads image from browser
@@ -126,6 +130,7 @@ IAM Role → EC2
 4.Rekognition compares face with collection
 
 5.Result displayed with confidence score
+
 
 🔹 AWS Services Used
 
@@ -142,6 +147,7 @@ IAM Role → EC2
 
 
 📸 Screenshots
+
 🔹  AWS EC2 Terminal
 
 
