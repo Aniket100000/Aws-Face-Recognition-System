@@ -139,6 +139,16 @@ aws rekognition index-faces \
   --image "S3Object={Bucket=face-recognition-free-test,Name=test/person1.jpeg}" \
   --external-image-id "person1"
 
+ ☁️ AWS EC2 Deployment
+
+
+python app.py
+
+
+* Hosted on AWS EC2
+* IAM Role attached for secure AWS access
+* AWS Rekognition used for face matching
+* AWS S3 used for image storage
 
   
 🌐 How Web App Works (Phase 2)
