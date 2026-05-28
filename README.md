@@ -1,4 +1,10 @@
 🚀 FaceID Cloud – Intelligent Face Recognition System 
+![AWS](https://img.shields.io/badge/AWS-Rekognition-orange)
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Flask](https://img.shields.io/badge/Flask-Backend-black)
+![EC2](https://img.shields.io/badge/AWS-EC2-yellow)
+![S3](https://img.shields.io/badge/AWS-S3-red)
+![Status](https://img.shields.io/badge/Status-Active-success)
 
 A complete cloud-based face recognition system built using AWS Rekognition, supporting both:
 
