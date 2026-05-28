@@ -76,18 +76,32 @@ User → Web UI → Flask Backend → AWS Rekognition → Result UI
 
 
 📸 Screenshots
-🔹 Web UI (Modern Interface)
+🔹  AWS EC2 Terminal
 
 
 
 
-🔹 Face Detection
+🔹 Face - Indexed
 
 
 
 
-🔹 Collection Created
+🔹Face Recognition Result
 
+
+
+
+🔹 Face Recognition Terminal
+
+
+
+
+🔹 Homepage UI
+
+
+
+
+🔹 AWS S3 Storage
 
 
 
